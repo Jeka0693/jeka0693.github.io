@@ -29,8 +29,15 @@
         <div class="photo-wrapper">
           <img src="photo.jpg" alt="Евгений Гладких" class="photo" 
                onerror="this.src='image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%23667eea%22/%3E%3Ctext x=%22100%22 y=%22120%22 font-size=%2280%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22>👨‍💻%3C/text%3E%3C/svg%3E'">
-          <span class="photo-status"></span>
+          <!---span class="photo-status"></span---->
         </div>
+      </div>
+
+      <!-- Status Badge -->
+      <div class="status-badges">
+        <span class="status-badge status-available active">Открыт к предложениям</span>
+        <span class="status-badge status-freelance ">Готов к подработке</span>
+        <span class="status-badge status-busy ">Занят</span>
       </div>
 
       <!-- Name & Title -->
@@ -77,12 +84,6 @@
           <span class="contact-icon">🐙</span>
           <span class="contact-text">GitHub @jeka0693</span>
         </a>
-      </div>
-
-      <!-- Status Badge -->
-      <div class="sidebar-status">
-        <span class="status-dot"></span>
-        Открыт к предложениям
       </div>
 
       <!-- CV Download -->
@@ -242,6 +243,37 @@
         </div>
 
         <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-icon">📈</div>
+            <h4>Инвестиционный анализатор</h4>
+            <p>Python-приложение для анализа биржевых данных, выбор лучших облигаций, оценка эмитентов, Telegram-бот.</p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">Api</span>
+            </div>
+            <div class="project-footer">
+              <span class="project-role">Fullstack</span>
+              <a href="https://t.me/ts_stock_market_bot" class="project-link">TG Bot →</a>
+              <a href="#" class="project-link">GitHub →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-icon">✂️</div>
+            <h4>Сокращатель описания</h4>
+            <p>Python-приложение по промту или обученной модели AI сокращает длинные описания (до 255 символов) без потери смысла.</p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">MySQL</span>
+              <span class="tech-badge">AI Api</span>
+            </div>
+            <div class="project-footer">
+              <span class="project-role">Fullstack</span>
+              <a href="#" class="project-link">GitHub →</a>
+            </div>
+          </article>
+
           <article class="project-card featured">
             <div class="project-badge">🔥 Fullstack</div>
             <div class="project-icon">📻</div>
@@ -251,21 +283,6 @@
               <span class="tech-badge">PHP</span>
               <span class="tech-badge">MySQL</span>
               <span class="tech-badge">Yii2</span>
-            </div>
-            <div class="project-footer">
-              <span class="project-role">Fullstack</span>
-              <a href="#" class="project-link">GitHub →</a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-icon">📈</div>
-            <h4>Инвестиционный анализатор</h4>
-            <p>Python-приложение для анализа биржевых данных, выбор лучших облигаций, оценка эмитентов, Telegram-бот.</p>
-            <div class="project-tech">
-              <span class="tech-badge">Python</span>
-              <span class="tech-badge">MySQL</span>
-              <span class="tech-badge">Api</span>
             </div>
             <div class="project-footer">
               <span class="project-role">Fullstack</span>
