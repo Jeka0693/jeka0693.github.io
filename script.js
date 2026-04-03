@@ -59,3 +59,106 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('%c📧 developer.evgen@mail.ru\n✈️ @jeka069\n🐙 github.com/jeka0693', 'font-size: 13px; color: #4a5568;');
   console.log('%c\n💡 P.S. Контакты всегда видны в сайдбаре →', 'font-size: 12px; color: #718096; font-style: italic;');
 });
+
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     const scrollButtons = document.querySelectorAll(".scroll-to-section");
+//     const scrollToTopButton = document.querySelector(".scroll-to-top");
+
+//     // Функция для проверки видимости секции
+//     function isSectionVisible(section) {
+//         const rect = section.getBoundingClientRect();
+//         console.log("Section:", section.id, "Top:", rect.top, "Bottom:", rect.bottom, window.innerHeight, document.documentElement.clientHeight);
+//         return rect.top >= 0 && rect.bottom <= window.innerHeight;
+//     }
+
+//     // Показывать/скрывать кнопки при прокрутке
+//     window.addEventListener("scroll", () => {
+//         scrollButtons.forEach(button => {
+//             const targetId = button.getAttribute("data-target");
+//             const targetSection = document.getElementById(targetId);
+//             // console.log((targetSection && isSectionVisible(targetSection)))
+
+//             if (targetSection && isSectionVisible(targetSection)) {
+//                 button.classList.add("active"); // Делаем кнопку видимой
+//             } else {
+//                 button.classList.remove("active"); // Скрываем кнопку
+//             }
+//         });
+
+//         // Показывать кнопку "Наверх" при прокрутке ниже 200px
+//         if (window.scrollY > 200) {
+//             scrollToTopButton.style.display = "block";
+//         } else {
+//             scrollToTopButton.style.display = "none";
+//         }
+//     });
+
+//     // Плавная прокрутка к секциям
+//     scrollButtons.forEach(button => {
+//         button.addEventListener("click", () => {
+//             const targetId = button.getAttribute("data-target");
+//             const targetSection = document.getElementById(targetId);
+//             if (targetSection) {
+//                 targetSection.scrollIntoView({ behavior: "smooth" });
+//             }
+//         });
+//     });
+
+//     // Плавная прокрутка наверх
+//     scrollToTopButton.addEventListener("click", () => {
+//         window.scrollTo({ top: 0, behavior: "smooth" });
+//     });
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollButtons = document.querySelectorAll(".scroll-to-section");
+    const scrollToTopButton = document.querySelector(".scroll-to-top");
+
+    // Функция для проверки видимости секции
+    function isSectionVisible(section) {
+        const rect = section.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        // Секция считается видимой, если хотя бы часть её находится в зоне видимости
+        return rect.top <= windowHeight && rect.bottom >= 0;
+    }
+
+    // Показывать/скрывать кнопки при прокрутке
+    window.addEventListener("scroll", () => {
+        scrollButtons.forEach(button => {
+            const targetId = button.getAttribute("data-target");
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection && isSectionVisible(targetSection)) {
+                button.classList.add("active"); // Делаем кнопку видимой
+            } else {
+                // button.classList.remove("active"); // Скрываем кнопку
+            }
+        });
+
+        // Показывать кнопку "Наверх" при прокрутке ниже 200px
+        if (window.scrollY > 200) {
+            scrollToTopButton.style.display = "block";
+        } else {
+            scrollToTopButton.style.display = "none";
+        }
+    });
+
+    // Плавная прокрутка к секциям
+    scrollButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            const targetId = button.getAttribute("data-target");
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+
+    // Плавная прокрутка наверх
+    scrollToTopButton.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});

@@ -954,9 +954,6 @@ img { max-width: 100%; height: auto; display: block; }
     font-size: 0.95rem;
   }
   
-  .main-content {
-    margin-left: 0;
-  }
   
   .container {
     padding: 0 20px;
@@ -1126,11 +1123,6 @@ button:focus-visible,
 .sidebar-photo {
   margin-bottom: 0; /* убрали отступ, теперь контролируется status-badges */
 }
-
-
-
-
-
 
 
 
