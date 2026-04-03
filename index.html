@@ -244,29 +244,51 @@
 
         <div class="projects-grid">
           <article class="project-card">
-            <div class="project-icon">📈</div>
-            <h4>Инвестиционный анализатор</h4>
-            <p>Python-приложение для анализа биржевых данных, выбор лучших облигаций, оценка эмитентов, Telegram-бот.</p>
-            <div class="project-tech">
-              <span class="tech-badge">Python</span>
-              <span class="tech-badge">MySQL</span>
-              <span class="tech-badge">Api</span>
+            <div class="project-header">
+              <div class="project-icon">📈</div>
+              <h4>Инвестиционный аналитик</h4>
+            </div>
+            <div class="project-body">
+              <p>
+                Приложение, разработанное для анализа биржевых данных с использованием API.
+                <br><br>
+                Программа автоматически собирает информацию об акциях и облигациях, проводит аналитику финансовых показателей эмитентов и фильтрует облигации по наилучшим условиям (доходность, риск, срок погашения).
+                <br><br>
+                Встроенный Telegram-бот предоставляет интерфейс для взаимодействия с приложением, позволяя <strong>пользователям</strong> получать актуальные рекомендации в режиме реального времени.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Api</span>
+              </div>
             </div>
             <div class="project-footer">
               <span class="project-role">Fullstack</span>
-              <a href="https://t.me/ts_stock_market_bot" class="project-link">TG Bot →</a>
+              <a href="https://t.me/ts_stock_market_bot" target="_blank" class="project-link">TG Bot →</a>
               <a href="#" class="project-link">GitHub →</a>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-icon">✂️</div>
-            <h4>Сокращатель описания</h4>
-            <p>Python-приложение по промту или обученной модели AI сокращает длинные описания (до 255 символов) без потери смысла.</p>
-            <div class="project-tech">
-              <span class="tech-badge">Python</span>
-              <span class="tech-badge">MySQL</span>
-              <span class="tech-badge">AI Api</span>
+            <div class="project-header">
+              <div class="project-icon">✂️</div>
+              <h4>Сокращатель текстов</h4>
+            </div>
+            <div class="project-body">
+              <p>
+                Приложение, использующее промт или обученную AI-модель, автоматически сокращает длинные тексты до n символов, сохраняя ключевой смысл.
+                <br>
+                Подходит:<br>
+                <strong>для маркетологов</strong>: создания кратких аннотаций, описаний товаров или постов в соцсетях.<br>
+                <strong>для контент-менеджеров</strong>: подготовка текстов для социальных сетей, блогов или новостных платформ.<br>
+                <strong>для SEO-специалистов</strong>: создание мета-описаний и кратких аннотаций для улучшения видимости в поисковых системах<br>
+                <strong>для авторов и редакторов</strong>: быстрое редактирование текстов для публикаций или презентаций.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">AI/ML API</span>
+              </div>
             </div>
             <div class="project-footer">
               <span class="project-role">Fullstack</span>
@@ -275,14 +297,26 @@
           </article>
 
           <article class="project-card featured">
-            <div class="project-badge">🔥 Fullstack</div>
-            <div class="project-icon">📻</div>
-            <h4>Радио-сканер</h4>
-            <p>Система мониторинга радиоэфира: парсинг топ-20 радиостанций, распознавание треков в реальном времени, сохранение в БД.</p>
-            <div class="project-tech">
-              <span class="tech-badge">PHP</span>
-              <span class="tech-badge">MySQL</span>
-              <span class="tech-badge">Yii2</span>
+            <!--div class="project-badge">🔥 Fullstack</div-->
+            <div class="project-header">
+              <div class="project-icon">📻</div>
+              <h4>Радио-сканер</h4>
+            </div>
+            <div class="project-body">
+              <p>
+                Приложение для мониторинга эфира топ-20 популярных радиостанций. 
+                <br><br>
+                Программа автоматически собирает данные о проигрываемых треках в реальном времени, используя парсинг аудиопотока и распознавание композиций.
+                <br>
+                Полученные данные сохраняются в базу данных для дальнейшего анализа и использования. 
+                <br><br>
+                Может быть полезна <strong>музыкантам</strong>, <strong>диджеям</strong> для отслеживания популярности треков, анализа музыкальных трендов и создания актуальных плейлистов.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Yii2</span>
+              </div>
             </div>
             <div class="project-footer">
               <span class="project-role">Fullstack</span>
@@ -291,20 +325,30 @@
           </article>
 
           <article class="project-card">
-            <div class="project-icon">🔍</div>
-            <h4>Мониторинг цен</h4>
-            <p>Поиск лучших предложений: туры по базам турагентств, товары по ссылкам. Отслеживание изменений и уведомления.</p>
-            <div class="project-tech">
-              <span class="tech-badge">Python/PHP</span>
-              <span class="tech-badge">MySQL</span>
-              <span class="tech-badge">Schedulers</span>
+            <div class="project-header">
+              <div class="project-icon">🔍</div>
+              <h4>Поиск лучших предложений по турам и товарам</h4>
+            </div>
+            <div class="project-body">
+              <p>                
+                Приложение для автоматического поиска и анализа выгодных предложений среди баз данных турагентств и интернет-магазинов. 
+                <br><br>
+                Программа сканирует доступные туры, товары или услуги по заданным пользовательским фильтрам (цена, дата, рейтинги и т.д.), отслеживает изменения в реальном времени и отправляет уведомления о лучших предложениях.
+                <br><br>
+                Идеально подходит <strong>для пользователей</strong>, которые хотят экономить на покупках или путешествиях, а также для бизнеса, который занимается анализом рынка.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">PHP</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">Yii2</span>
+              </div>
             </div>
             <div class="project-footer">
-              <span class="project-role">Backend</span>
+              <span class="project-role">Fullstack</span>
               <a href="#" class="project-link">GitHub →</a>
             </div>
           </article>
-        </div>
+        </div>        
       </div>
     </section>
 
