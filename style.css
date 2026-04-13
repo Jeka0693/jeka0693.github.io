@@ -360,6 +360,68 @@ img { max-width: 100%; height: auto; display: block; }
   min-height: 100vh;
 }
 
+.bash-nav {
+  position: sticky;
+  top: 16px;
+  z-index: 900;
+  margin: 16px 0 0;
+}
+
+.bash-nav-inner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border-sidebar);
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: var(--shadow-sm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  letter-spacing: -0.01em;
+}
+
+[data-theme="dark"] .bash-nav-inner {
+  background: rgba(2, 6, 23, 0.7);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.bash-nav-prompt {
+  color: #22c55e;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 10px;
+  line-height: 1;
+}
+
+.bash-nav-link {
+  color: rgba(226, 232, 240, 0.92);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.bash-nav-sep {
+  color: rgba(148, 163, 184, 0.9);
+  font-weight: 700;
+  user-select: none;
+}
+
+.bash-nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.bash-nav-prompt:hover {
+  background: rgba(34, 197, 94, 0.14);
+}
+
+.bash-nav a:focus-visible {
+  outline: 2px solid #22c55e;
+  outline-offset: 2px;
+  border-radius: 10px;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -466,6 +528,20 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 1.1rem;
   color: var(--text-secondary);
   margin-top: 8px;
+}
+
+.skill-level-hint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+.level-note {
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  line-height: 1.2;
 }
 
 /* ===== About Grid ===== */
@@ -901,7 +977,7 @@ img { max-width: 100%; height: auto; display: block; }
   }
   
   .sidebar-header {
-    text-align: left;
+    text-align: center;
     padding: 0;
     flex: 1;
     min-width: 200px;
@@ -958,6 +1034,33 @@ img { max-width: 100%; height: auto; display: block; }
     margin-left: 0;
   }
   
+  .bash-nav {
+    top: 10px;
+    margin-top: 12px;
+  }
+
+  .bash-nav-inner {
+    gap: 12px;
+    padding: 10px 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .bash-nav-inner::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .bash-nav-link {
+    white-space: nowrap;
+    font-size: 0.92rem;
+  }
+
+  .bash-nav-sep {
+    opacity: 0.8;
+  }
+
   .container {
     padding: 0 20px;
   }

@@ -14,6 +14,7 @@
   <link rel="icon" href="image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👨‍💻%3C/text%3E%3C/svg%3E">
 </head>
 <body>
+  <div id="top"></div>
   <!-- Animated Background -->
   <div class="gradient-bg">
     <div class="gradient-orb gradient-orb-1"></div>
@@ -29,7 +30,6 @@
         <div class="photo-wrapper">
           <img src="photo.jpg" alt="Евгений Гладких" class="photo" 
                onerror="this.src='image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%23667eea%22/%3E%3Ctext x=%22100%22 y=%22120%22 font-size=%2280%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22>👨‍💻%3C/text%3E%3C/svg%3E'">
-          <!---span class="photo-status"></span---->
         </div>
       </div>
 
@@ -58,7 +58,7 @@
         </div>
         <div class="info-row">
           <span class="info-icon">💼</span>
-          <span class="info-text">12+ лет опыта</span>
+          <span class="info-text">15+ лет опыта</span>
         </div>
         <div class="info-row">
           <span class="info-icon">🎓</span>
@@ -98,6 +98,21 @@
 
   <!-- Main Content -->
   <main class="main-content">
+    <!-- Bash-like Nav -->
+    <nav class="bash-nav" aria-label="Навигация по разделам">
+      <div class="container">
+        <div class="bash-nav-inner">
+          <a class="bash-nav-prompt" href="#top" aria-label="Наверх страницы">&gt;_</a>
+          <a class="bash-nav-link" href="#about">Обо мне</a>
+          <span class="bash-nav-sep" aria-hidden="true">|</span>
+          <a class="bash-nav-link" href="#skills">Стек</a>
+          <span class="bash-nav-sep" aria-hidden="true">|</span>
+          <a class="bash-nav-link" href="#projects">Проекты</a>
+          <span class="bash-nav-sep" aria-hidden="true">|</span>
+          <a class="bash-nav-link" href="#experience">Опыт</a>
+        </div>
+      </div>
+    </nav>
     <!-- Кнопки-маяки -->
     <!--div class="scroll-buttons">
         <button class="scroll-to-top">↑</button>
@@ -116,13 +131,12 @@
         </div>
         
         <h2 class="hero-title">
-          Создаю <span class="gradient-text">надёжный</span> backend<br>
-          для <span class="gradient-text">сложных</span> задач
+          Делаю <span class="gradient-text">надёжный</span> backend<br>
+          на <span class="gradient-text">Python / PHP</span> и <span class="gradient-text">SQL</span>
         </h2>
         
         <p class="hero-subtitle">
-          Backend-разработчик с 7+ летним опытом. Специализируюсь на Python, PHP и оптимизации баз данных. 
-          Превращаю сложные технические задачи в элегантные решения.
+          Backend-разработчик: 15+ лет в разработке, 8 лет в backend. Проектирую API и структуру данных, оптимизирую SQL и интеграции, автоматизирую сбор и обработку данных.
         </p>
 
         <div class="hero-tech">
@@ -132,7 +146,7 @@
             <span class="tech-item">PHP 🐘</span>
             <span class="tech-item">MySQL 💾</span>
             <!--span class="tech-item">Docker 🐳</span-->
-            <span class="tech-item">Api 🔁</span>
+            <span class="tech-item">API 🔁</span>
           </div>
         </div>
       </div>
@@ -148,29 +162,27 @@
         <div class="about-grid">
           <div class="about-card">
             <div class="about-icon">🎯</div>
-            <h4>Что делаю</h4>
-            <p>Разрабатываю надёжные backend-решения на Python и PHP. Проектирую архитектуру баз данных и оптимизирую запросы.</p>
+            <h4>Чем полезен</h4>
+            <p>Строю backend для продуктовых задач: API, интеграции, фоновые задания, хранение и обработка данных. Делаю так, чтобы система была стабильной и быстрой.</p>
           </div>
           
           <div class="about-card">
             <div class="about-icon">💡</div>
-            <h4>Что вдохновляет</h4>
-            <p>Сложные технические задачи, поиск неочевидных решений, чистая архитектура и оптимизация кода.</p>
+            <h4>Фокус</h4>
+            <p>Производительность, качество данных и поддерживаемость. Люблю находить «узкие места» в SQL и логике, упрощать архитектуру и доводить решение до продакшена.</p>
           </div>
           
           <div class="about-card">
             <div class="about-icon">🚀</div>
             <h4>Подход</h4>
-            <p>Не люблю «костыли». Предпочитаю продуманные решения с запасом на будущее и масштабируемость.</p>
+            <p>Сначала уточняю бизнес-цель, затем фиксирую контракты API и модель данных. Предпочитаю простые решения, которые легко развивать и поддерживать.</p>
           </div>
 
           <div class="about-card">
             <div class="about-icon">🌟</div>
-            <h4>Soft Skills</h4>
+            <h4>Как работаю в команде</h4>
             <p>
-              Умею сотрудничать с коллегами, находить общий язык и достигать общих целей. 
-              Могу брать на себя ответственность за проекты и координировать работу команды.
-
+              Беру ответственность за результат и прозрачно коммуницирую. Делаю code review, помогаю коллегам, веду обсуждения по архитектуре и менторю джунов.
             </p>
           </div>
 
@@ -178,7 +190,15 @@
             <div class="about-icon">🌍</div>
             <h4>Английский</h4>
             <p>
-              Чтение тех. документации
+              Английский: A1–A2, читаю техдокументацию, базово общаюсь в чате
+            </p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">🤖</div>
+            <h4>ИИ: развиваю экспертизу</h4>
+            <p>
+              Активно изучаю и внедряю AI-инструменты в рабочие сценарии: prompt engineering, интеграции LLM API и автоматизация задач разработки. Открыт к проектам с ML/AI-компонентами и продолжаю обучение.
             </p>
           </div>
 
@@ -191,6 +211,9 @@
       <div class="container">
         <div class="section-header">
           <h3 class="section-title">Технический стек</h3>
+          <p class="section-subtitle skill-level-hint">
+            Уровни: <span class="skill-tag expert level-note">Expert</span> <span class="skill-tag advanced level-note">Advanced</span> <span class="skill-tag intermediate level-note">Intermediate</span>
+          </p>
         </div>
 
         <div class="skills-grid">
@@ -277,16 +300,14 @@
             </div>
             <div class="project-body">
               <p>
-                Приложение, разработанное для анализа биржевых данных с использованием API.
+                Сервис для анализа биржевых данных через API: сбор котировок и параметров, расчёт метрик, фильтрация по условиям (доходность/риск/срок).
                 <br><br>
-                Программа автоматически собирает информацию об акциях и облигациях, проводит аналитику финансовых показателей эмитентов и фильтрует облигации по наилучшим условиям (доходность, риск, срок погашения).
-                <br><br>
-                Встроенный Telegram-бот предоставляет интерфейс для взаимодействия с приложением, позволяя <strong>пользователям</strong> получать актуальные рекомендации в режиме реального времени.
+                Telegram-бот даёт быстрый интерфейс: запросы, подборки и уведомления — без ручной рутины.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">Python</span>
                 <span class="tech-badge">MySQL</span>
-                <span class="tech-badge">Api</span>
+                <span class="tech-badge">API</span>
               </div>
             </div>
             <div class="project-footer">
@@ -303,13 +324,9 @@
             </div>
             <div class="project-body">
               <p>
-                Приложение, использующее промт или обученную AI-модель, автоматически сокращает длинные тексты до n символов, сохраняя ключевой смысл.
-                <br>
-                Подходит:<br>
-                <strong>для маркетологов</strong>: создания кратких аннотаций, описаний товаров или постов в соцсетях.<br>
-                <strong>для контент-менеджеров</strong>: подготовка текстов для социальных сетей, блогов или новостных платформ.<br>
-                <strong>для SEO-специалистов</strong>: создание мета-описаний и кратких аннотаций для улучшения видимости в поисковых системах<br>
-                <strong>для авторов и редакторов</strong>: быстрое редактирование текстов для публикаций или презентаций.
+                Инструмент для сокращения длинных текстов с сохранением смысла: промтинг или подключение AI-модели через API, контроль длины результата и форматирования.
+                <br><br>
+                Сценарии: аннотации, карточки товара, посты, мета-описания и быстрые черновики для редактора.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">Python</span>
@@ -331,13 +348,9 @@
             </div>
             <div class="project-body">
               <p>
-                Приложение для мониторинга эфира топ-20 популярных радиостанций. 
+                Сервис мониторинга эфира радиостанций: извлекает данные по трекам в реальном времени (парсинг аудиопотока + распознавание), сохраняет историю и даёт основу для аналитики.
                 <br><br>
-                Программа автоматически собирает данные о проигрываемых треках в реальном времени, используя парсинг аудиопотока и распознавание композиций.
-                <br>
-                Полученные данные сохраняются в базу данных для дальнейшего анализа и использования. 
-                <br><br>
-                Может быть полезна <strong>музыкантам</strong>, <strong>диджеям</strong> для отслеживания популярности треков, анализа музыкальных трендов и создания актуальных плейлистов.
+                Сценарии: анализ частоты ротаций, трендов и подборок — для музыкантов, продюсеров, диджеев.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">PHP</span>
@@ -358,11 +371,9 @@
             </div>
             <div class="project-body">
               <p>                
-                Приложение для автоматического поиска и анализа выгодных предложений среди баз данных турагентств и интернет-магазинов. 
+                Сервис мониторинга выгодных предложений: собирает данные из источников, нормализует, сравнивает по фильтрам (цена/дата/рейтинг) и уведомляет о лучших вариантах.
                 <br><br>
-                Программа сканирует доступные туры, товары или услуги по заданным пользовательским фильтрам (цена, дата, рейтинги и т.д.), отслеживает изменения в реальном времени и отправляет уведомления о лучших предложениях.
-                <br><br>
-                Идеально подходит <strong>для пользователей</strong>, которые хотят экономить на покупках или путешествиях, а также для бизнеса, который занимается анализом рынка.
+                Подходит как пользователям (экономия времени/денег), так и для аналитики рынка в бизнес‑сценариях.
               </p>
               <div class="project-tech">
                 <span class="tech-badge">PHP</span>
@@ -391,17 +402,16 @@
             <div class="timeline-marker"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h4>Ведущий разработчик</h4>
-                <span class="timeline-period">Настоящее время</span>
+                <h4>Ведущий backend‑разработчик</h4>
+                <span class="timeline-period">Сейчас</span>
               </div>
               <p class="timeline-company">Backend / Fullstack</p>
               <ul class="timeline-list">
-                <li>Разработка backend-решений на Python и PHP</li>
-                <li>Проектирование архитектуры БД и оптимизация запросов</li>
-                <li>Рефакторинг и оптимизация кода</li>
-                <li><strong>Достижение:</strong> внедрил систему авто-создания оптимизированных таблиц при получении неизвестных данных из API</li>
-                <li>Интеграция внешних сервисов, работа с асинхронными задачами</li>
-                <li>Автоматизация процессов сбора, обработки и анализа данных</li>
+                <li>Разработка backend на <strong>Python</strong> и <strong>PHP</strong>: API, бизнес‑логика, интеграции</li>
+                <li>Проектирование и оптимизация <strong>БД</strong>: схема, индексы, миграции, оптимизация запросов</li>
+                <li>Рефакторинг и ускорение критичных участков кода и SQL</li>
+                <li>Асинхронные задачи и фоновые процессы, автоматизация сборки/обработки данных</li>
+                <li><strong>Достижение:</strong> внедрил автосоздание оптимизированных таблиц при получении новых структур данных из API</li>
               </ul>
             </div>
           </div>
@@ -415,9 +425,9 @@
               </div>
               <p class="timeline-company">Обучение / Консалтинг</p>
               <ul class="timeline-list">
-                <li>Обучение начинающих разработчиков основам PHP / Python</li>
-                <li>Code review, помощь в архитектурных вопросах</li>
-                <li>Передача опыта работы с фреймворками и БД</li>
+                <li>Помогаю начинающим разработчикам: Python/PHP, базы данных, практики разработки</li>
+                <li>Code review: читаемость, архитектура, качество SQL, разбор ошибок и улучшение решений</li>
+                <li>Разбор задач «как на работе»: декомпозиция, оценка рисков, доведение до результата</li>
               </ul>
             </div>
           </div>
